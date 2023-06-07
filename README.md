@@ -4,9 +4,9 @@ A simple spring boot implementation to understand how Graphql works.
 
 There are three entities Employee, Department and Organization. Each of them is stored in a separate table. relationship model between entites are;
 
-1-n
-1-n
-n-1
+1-n / 
+1-n /
+n-1 /
 
 -The app inserts some demo data to the H2 database on startup.
 
