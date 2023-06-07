@@ -1,0 +1,52 @@
+Example Query No : 1
+//-----//
+query{
+  department(id:1){
+    id,
+    name,
+    organization {
+      id
+    },
+		employees {
+		  id
+      lastName
+      firstName
+      position
+      salary
+      department {
+        id
+      }
+      age
+      __typename
+    }
+  }
+}
+Example Query No : 2
+//-----//
+query{
+  departments{
+    id
+  	name
+    organization {
+      id
+      name
+    }
+    employees {
+      id
+      firstName
+      lastName
+      position
+      salary
+      age
+    }
+  }
+}
+Example Query No : 3
+//-----//
+{
+  employeesWithFilter(filter: {salary: {operator: "gt", value: "12000"}}) {
+    id
+    lastName
+    position
+  }
+}
